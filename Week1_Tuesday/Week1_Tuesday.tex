@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,mathabx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{placeins}
+\usepackage{lipsum}
+\usepackage[shortlabels]{enumitem}
+\usepackage{placeins}
+\usepackage[makeroom]{cancel}
+\usepackage{mathrsfs}
+\usepackage{nicefrac}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\def\blankpage{%
+      \clearpage%
+      \thispagestyle{empty}%
+      \addtocounter{page}{-1}%pdf
+      \null%
+      \clearpage}
+\begin{document}
+\title{TCSS 343 - Week 0 - Thursday}
+\author{Jake McKenzie}
+\maketitle
+\noindent\centerline{\textbf{Strong Induction and some Mathematical Review}}\\\\\\\\\\\\
+\newpage
+\begin{enumerate}
+\item Today we will delve deeper into strong induction. You may not 
+be asked to do this until later in the quarter yourself, but I want 
+to review strong induction more heavily as many of the proofs you will 
+see will rely on this technique! 
+\\\\
+\textbf{Strong Induction}\\
+\begin{enumerate}
+\item[Step 1:] State Claim: We will show $P(n)$ is true $\forall n$, 
+using induction on $n$.
+\item[Step 2:]  State Basis: We will show that P(1) is true.
+\item[Step 3:]  Inductive Hypothesis: State P(k)
+\item[Step 4:]  Inductive Step: Suppose $P(1)$ through $P(k)$ is true, for some integer $k$.
+We need to show that $P(k+1)$ is true. 
+\end{enumerate}
+
+\newpage
+\item Simplify the following algebraic expressions.
+\begin{enumerate}
+\item $9n*(3n^2+5n+8)$
+\end{enumerate}    
+\end{enumerate}
+\end{document}

@@ -1,14 +1,11 @@
-def debug_week0_thursday(x,y,u,v):
-    if x > y:
-        x = x - y;
-        u = u + v;
-        print(str(x) + " " + str(y) + " " + str(u) + " " + str(v));
-        debug_week0_thursday(x,y,u,v);
-    elif y > x:
-        y = y - x;
-        v = v + u;
-        print(str(x) + " " + str(y) + " " + str(u) + " " + str(v));
-        debug_week0_thursday(x,y,u,v);        
-    else: 
-        print((x + y) / 2 * (u + v) / 2);
-debug_week0_thursday(36,10,36,10)
+import array as arr
+v = arr.array([1,2,3,45,69,-3])
+def debug_week0_thursday(vector):
+    max,min = vector[0],vector[0];
+    for elem in vector[1:]:
+        if elem > max:
+            max = elem
+        if elem < min:
+            min = elem
+    print(str(min)+", " +str(max));
+debug_week0_thursday(v)
