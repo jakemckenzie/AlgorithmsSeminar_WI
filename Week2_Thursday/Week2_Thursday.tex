@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,mathabx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{placeins}
+\usepackage{lipsum}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage{wrapfig}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\begin{document}
+\title{TCSS 343 - Week 2 - Thursday}
+\author{Jake McKenzie}
+\maketitle
+\noindent\centerline{\textbf{Asymptotics with Divide and Conquer}}\\\\\\\\\\\\\\\\
+\begin{center}
+    ``Do not read, as children do, to amuse yourself, or like the ambitious, for the purpose of instruction. No, read in order to live". \\$\cdots$\\ Gustave Flaubert
+\end{center}
+\begin{center}
+    ``Trust no friend without faults, and love a woman, but no angel."\\
+    $\cdots$\\
+    Doris Lessing
+\end{center}
+\newpage
+\begin{enumerate}
+\item[0. ] Prove the theorem below using the techniques of binding the term and splitting the
+sum to find a tight bound for the sum. Make sure your proof is complete, concise, clear
+and precise.\\
+\textbf{Theorem 0: }
+$$\sum\limits_{i=1}^{n}i^4\in\Theta(n^5)$$
+\newpage
+\item Prove the theorem below using the techniques of binding the term and splitting the
+sum to find a tight bound for the sum. Make sure your proof is complete, concise, clear
+and precise.\\
+\textbf{Theorem 1: }
+$$\sum\limits_{i=1}^{n}(\log_2{i})^2\in\Theta(n(\log_2{n})^2)$$
+\newpage
+\item Prove the theorem below using the techniques of binding the term and splitting the
+sum to find a tight bound for the sum. Make sure your proof is complete, concise, clear
+and precise.\\
+\textbf{Theorem 2: }
+$$\sum\limits_{i=1}^{\sqrt{n}}i^2 \in\Theta(n^{\frac{3}{2}})$$
+\newpage
+Consider the task of detecting whether a given array has an element that is repeated in more
+than half of the positions of the array. For example. the value 2 is the majority element in
+the array $\{3, 2, 5, 2, 3, 2, 7, 2, 2\}$, while the array $\{5, 8, 8, 3, 10, 8, 5, 8\}$ has no majority element.
+In the present task you will develop a divide and conquer algorithm for solving this problem,
+and you will analyze its running time.\\
+\item Write a formal statement of this problem. That is, state the input and
+output criteria as precisely as possible.
+\newpage
+\item  Suppose that an array $a[1 \dots n]$ has an element $v_L$ that occurs in strictly more than half
+of the first floor($\frac{n}{2}$) positions of $a$, and an element $v_H$ that occurs in strictly more than half
+of the remaining ceiling($\frac{n}{2}$) positions. Argue carefully why if there is an element $v$ of $a$ that
+occurs in over half of all $n$ positions of $a$, then $v$ must be either $v_L$ or $v_H$. Note that it
+would not be enough for $v$ to occur more times in a than either $v_L$ or $v_H$. We explicitly
+require that $v$ occur in strictly more than half of all positions of the entire array.
+\newpage
+\item Using the information you came to in the prior pages, design a divide and conquer algorithm 
+that returns the majority element of an array or the value $-1$ if no such element exists. 
+Give detailed tidy psuedocode.
+\newpage
+\item Prove the theorem below using the techniques of binding the term and splitting the
+sum to find a tight bound for the sum. Make sure your proof is complete, concise, clear
+and precise.\\
+\textbf{Theorem 3: }
+$$\sum\limits_{i=1}^{n}\log_2{(\frac{n}{i})}\in\Theta(n)$$
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+

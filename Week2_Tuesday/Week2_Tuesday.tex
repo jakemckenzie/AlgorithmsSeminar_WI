@@ -3,6 +3,7 @@
 \usepackage{graphicx,mathabx}
 \usepackage{xcolor}
 \usepackage{tikz}
+\usepackage{soul}
 \usepackage{placeins}
 \usepackage{lipsum}
 \usepackage{mathtools}
@@ -13,7 +14,7 @@
 \title{TCSS 343 - Week 2 - Tuesday}
 \author{Jake McKenzie}
 \maketitle
-\noindent\centerline{\textbf{Asymptotics with Divide and Conquer}}\\\\\\\\\\\\\\\\
+\noindent\centerline{\textbf{Asymptotics with an Introduction to the Anlysis Algorithms}}\\\\\\\\\\\\\\\\
 \begin{center}
     ``I am incapable of conceiving infinity, and yet I do not accept finity. I want this adventure that is the context of my life to go on without end". \\$\dots$\\ Simone de Beauvoir
 \end{center}
@@ -36,36 +37,21 @@ and precise.\\
 \textbf{Theorem 1: }
 $$\sum\limits_{i=1}^{n}(\log_2{i})^2\in\Theta(n(\log_2{n})^2)$$
 \newpage
-\item Prove the theorem below using the techniques of binding the term and splitting the
-sum to find a tight bound for the sum. Make sure your proof is complete, concise, clear
-and precise.\\
-\textbf{Theorem 2: }
-$$\sum\limits_{i=1}^{\sqrt{n}}i^2 \in\Theta(n^{\frac{3}{2}})$$
+Here is an algorithm for singing that annoying song ``99 Bottles of Beer on the Wall''.
+It exhibits all the qualities we expect from algorithms, namely that it is explicit, 
+precise, unambiguous, mechanically-executable sequence of elementary instructions intended to 
+accomplish a specific purpose.\\
+\centerline{\includegraphics[scale = .6]{BoBeer.JPG}}\\
+\item If you use this algorithm to sing this terrible song, $n$-times how many times will you say beer? $2n$? 
 \newpage
-Consider the task of detecting whether a given array has an element that is repeated in more
-than half of the positions of the array. For example. the value 2 is the majority element in
-the array $\{3, 2, 5, 2, 3, 2, 7, 2, 2\}$, while the array $\{5, 8, 8, 3, 10, 8, 5, 8\}$ has no majority element.
-In the present task you will develop a divide and conquer algorithm for solving this problem,
-and you will analyze its running time.\\
-\item Write a formal statement of this problem. That is, state the input and
-output criteria as precisely as possible.
-\newpage
-\item  Suppose that an array $a[1 \dots n]$ has an element $v_L$ that occurs in strictly more than half
-of the first floor($\frac{n}{2}$) positions of $a$, and an element $v_H$ that occurs in strictly more than half
-of the remaining ceiling($\frac{n}{2}$) positions. Argue carefully why if there is an element $v$ of $a$ that
-occurs in over half of all $n$ positions of $a$, then $v$ must be either $v_L$ or $v_H$. Note that it
-would not be enough for $v$ to occur more times in a than either $v_L$ or $v_H$. We explicitly
-require that $v$ occur in strictly more than half of all positions of the entire array.
-\newpage
-\item Using the information you came to in the prior pages, design a divide and conquer algorithm 
-that returns the majority element of an array or the value $-1$ if no such element exists. 
-Give detailed tidy psuedocode.
-\newpage
-\item Prove the theorem below using the techniques of binding the term and splitting the
-sum to find a tight bound for the sum. Make sure your proof is complete, concise, clear
-and precise.\\
-\textbf{Theorem 3: }
-$$\sum\limits_{i=1}^{n}\log_2{(\frac{n}{i})}\in\Theta(n)$$
+Here is an algorithm for singing a far less annoying song, $12$ Days of Christmas, generalized to $n$ 
+Days of Christmas. Instead of analyzing the exact \st{running} singing time, let focus on the asymptotic behavior. \\
+\centerline{\includegraphics[scale = .5]{NDaysOfChristmas.JPG}}\\
+\item How many gifts are sent into this algorithm? Express this as an exact answer.
+\item Express the \st{running} singing time as a sum, then big theta running time ( 
+\textbf{HINT: }The singer mentions the name of a gift how many times?).
+\item During the first $n$ days of Christmas, my true love gate to me exactly how many gifts? Express 
+this as a sum, then solve that sum finding the the big theta space complexity of the number of gifts my true love gave to me.
 \end{enumerate}
 \end{document}
 
