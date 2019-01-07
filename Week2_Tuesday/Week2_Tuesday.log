@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.15)  4 JAN 2019 12:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.15)  5 JAN 2019 11:29
 entering extended mode
-**./Week1_Thursday.tex
-(Week1_Thursday.tex
+**./Week2_Tuesday.tex
+(Week2_Tuesday.tex
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -700,6 +700,18 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 librarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+("C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks38
+\SOUL@lasttoken=\toks39
+\SOUL@cmds=\toks40
+\SOUL@buffer=\toks41
+\SOUL@token=\toks42
+\SOUL@spaceskip=\skip49
+\SOUL@ttwidth=\dimen161
+\SOUL@uldp=\dimen162
+\SOUL@ulht=\dimen163
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
 Package: placeins 2005/04/18  v 2.2
 )
@@ -714,14 +726,14 @@ Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count124
 \calc@Bcount=\count125
-\calc@Adimen=\dimen161
-\calc@Bdimen=\dimen162
-\calc@Askip=\skip49
-\calc@Bskip=\skip50
+\calc@Adimen=\dimen164
+\calc@Bdimen=\dimen165
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count126
-\calc@Cskip=\skip51
+\calc@Cskip=\skip52
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -731,59 +743,59 @@ LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count127
-\l_MT_multwidth_dim=\dimen163
-\origjot=\skip52
-\l_MT_shortvdotswithinadjustabove_dim=\dimen164
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen165
-\l_MT_above_intertext_sep=\dimen166
-\l_MT_below_intertext_sep=\dimen167
-\l_MT_above_shortintertext_sep=\dimen168
-\l_MT_below_shortintertext_sep=\dimen169
+\l_MT_multwidth_dim=\dimen166
+\origjot=\skip53
+\l_MT_shortvdotswithinadjustabove_dim=\dimen167
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen168
+\l_MT_above_intertext_sep=\dimen169
+\l_MT_below_intertext_sep=\dimen170
+\l_MT_above_shortintertext_sep=\dimen171
+\l_MT_below_shortintertext_sep=\dimen172
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip53
-\enit@outerparindent=\dimen170
-\enit@toks=\toks38
+\labelindent=\skip54
+\enit@outerparindent=\dimen173
+\enit@toks=\toks43
 \enit@inbox=\box39
 \enitdp@description=\count128
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
-\wrapoverhang=\dimen171
-\WF@size=\dimen172
+\wrapoverhang=\dimen174
+\WF@size=\dimen175
 \c@WF@wrappedlines=\count129
 \WF@box=\box40
-\WF@everypar=\toks39
+\WF@everypar=\toks44
 Package: wrapfig 2003/01/31  v 3.6
 )
-No file Week1_Thursday.aux.
-\openout1 = `Week1_Thursday.aux'.
+No file Week2_Tuesday.aux.
+\openout1 = `Week2_Tuesday.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count130
-\scratchdimen=\dimen173
+\scratchdimen=\dimen176
 \scratchbox=\box41
 \nofMPsegments=\count131
 \nofMParguments=\count132
-\everyMPshowfont=\toks40
+\everyMPshowfont=\toks45
 \MPscratchCnt=\count133
-\MPscratchDim=\dimen174
+\MPscratchDim=\dimen177
 \MPnumerator=\count134
 \makeMPintoPDFobject=\count135
-\everyMPtoPDFconversion=\toks41
+\everyMPtoPDFconversion=\toks46
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -837,84 +849,112 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 [1
 
 {C:/Users/iapetus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2]
-<algo.jpg, id=17, 590.205pt x 304.13625pt>
-File: algo.jpg Graphic file (type jpg)
-<use algo.jpg>
-Package pdftex.def Info: algo.jpg  used on input line 37.
-(pdftex.def)             Requested size: 354.12573pt x 182.48315pt.
- [3 <./algo.jpg>] [4] [5] [6] [7] (Week1_Thursday.aux) ) 
+[2] [3]
+<BoBeer.JPG, id=23, 609.02531pt x 149.05687pt>
+File: BoBeer.JPG Graphic file (type jpg)
+<use BoBeer.JPG>
+Package pdftex.def Info: BoBeer.JPG  used on input line 47.
+(pdftex.def)             Requested size: 365.418pt x 89.4348pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 43--48
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--48
+
+ []
+
+[4 <./BoBeer.JPG>]
+<NDaysOfChristmas.JPG, id=27, 767.86874pt x 271.76532pt>
+File: NDaysOfChristmas.JPG Graphic file (type jpg)
+<use NDaysOfChristmas.JPG>
+Package pdftex.def Info: NDaysOfChristmas.JPG  used on input line 52.
+(pdftex.def)             Requested size: 383.93343pt x 135.88232pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 50--53
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+
+ []
+
+[5 <./NDaysOfChristmas.JPG>] (Week2_Tuesday.aux) ) 
 Here is how much of TeX's memory you used:
- 13717 strings out of 492973
- 263255 string characters out of 3135932
- 400845 words of memory out of 3000000
- 17307 multiletter control sequences out of 15000+200000
- 17770 words of font info for 63 fonts, out of 3000000 for 9000
+ 13890 strings out of 492973
+ 265454 string characters out of 3135932
+ 404328 words of memory out of 3000000
+ 17474 multiletter control sequences out of 15000+200000
+ 18083 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,54p,419b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\iapetus\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha12.pk><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr8.pfb>
-Output written on Week1_Thursday.pdf (7 pages, 136012 bytes).
+ 55i,6n,54p,414b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\iapetus\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha8.pk> <C:\Users\iapet
+us\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi720\mathx10.pk> <
+C:\Users\iapetus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600
+\matha12.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on Week2_Tuesday.pdf (5 pages, 169194 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
+ 65 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
