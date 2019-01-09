@@ -1,0 +1,139 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,mathabx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{placeins}
+\usepackage{lipsum}
+\usepackage[shortlabels]{enumitem}
+\usepackage{placeins}
+\usepackage[makeroom]{cancel}
+\usepackage{mathrsfs}
+\usepackage{nicefrac}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\def\blankpage{%
+      \clearpage%
+      \thispagestyle{empty}%
+      \addtocounter{page}{-1}%pdf
+      \null%
+      \clearpage}
+\begin{document}
+\title{TCSS 343 - Week 0 - Wednesday}
+\author{Jake McKenzie}
+\maketitle
+\noindent\centerline{\textbf{Strong Induction and some Mathematical Review}}\\\\\\\\\\\\
+\begin{center}
+    ``Silence is so accurate". \\$\cdots$\\ Mark Rothko
+\end{center}
+\begin{center}
+    ``I don't believe in charity. I believe in solidarity. Charity is so vertical. It goes from the top to the bottom. Solidarity is horizontal. It respects the other person. I have a lot to learn from other people". \\$\cdots$\\ Eduardo Galeano
+\end{center}
+\begin{center}
+    ``The Universe is a labyrinth made of labyrinths. Each leads to another. And wherever we cannot go ourselves, we reach with mathematics. Out of mathematics we build wagons to carry us into the nonhuman realms of the world". \\$\cdots$\\ Stanisław Lem
+\end{center}
+\newpage
+\begin{enumerate}
+\item[0. ] Prove the following theorems. Use a direct proof to find constants that satisfy the
+definition of big theta and use the limit test. Make sure your proof is complete, concise, clear
+and precise.\\\\
+\textbf{Theorem 0.} $\log{n!}\in\Theta(n\log{n})$
+\newpage
+
+\item Show that the left hand side is equal to the right hand side. 
+There are two popular tactics in showing such an equality that I've run across. 
+The more work but zombie tactic I like is expansion then contraction of both sides then using
+the steps you found on the right to be the steps for the left but in reverse. By the fundamental theorem of algebra
+both sides must be equal if their full expansions are equal. The other slightly
+trickier and requires you to do more thinking up front by trying to find a common factor
+in a clever way. Both methods are perfectly valid. Your method may be completely different and valid too.
+I'm just trying to give you insight on how to start.
+$$\bigg(\frac{k(k + 1)}{2}\bigg)^2\frac{2k^2+2k-1}{3} + (k + 1)^5=\big(\frac{(k+1)(k + 2)}{2}\big)^2\frac{2k^2+6k+3}{3} $$
+\newpage
+\item Benin is a fisherman who is simply good at fishing. One day, he finds a nice place to go fishing with two ponds. 
+Moving from the $i-th$ fish-pond (the one he starts at) to the $j-th$ fishpond would cost $|i - j|$ units of time. 
+Initially Benin can get $F_i$ fish in the $i-th$ fishpond. 
+In the next turn at the same fishpond, the amount of fish he can get is decreased by $D_i$. 
+Notice that Benin will not get negative amount of fish.
+Each turn of fishing takes Benin 1 unit of time if Benin is at that pond and $|i - j|$ units of time to switch.
+\\\\
+For example, if $F_1 = 10$, $F_2 = 5$, $D_1 = 2$, $D_2 = 3$ and Benin can fish for up to eight units of time, then he will get $10 + 8 + 6 + 5 + 4 = 33$.
+Washington Department of Fish and Wildlife (WDFW) requires that Benin switch to the adjacent pond when it has more fish and he cannot fish for "negative" fish.
+Write a recursive algorithm to see how many fish Benin can fish for!
+\newpage
+\item For the following problems compute the limit as $n$ goes to $\infty$.
+\begin{enumerate}
+\item $\frac{n}{\log_2{n}}$
+\item $\frac{\sqrt{n}}{\log_2{n^2}}$
+\item $\frac{2^n}{3^n}$
+\item $\frac{n(n+1)(n+2)}{n^2}$
+\item $\frac{\sum\limits_{i=1}^{n}i}{2n}$
+\item $\frac{\sum\limits_{i=1}^{n}1}{\sqrt{n}}$
+\end{enumerate}
+\newpage
+\item For the following problems select the dominate term(s) having the 
+steepest increase in $n$ and specify the lowest Big-Oh complexity $O(\dots)$
+for each of the given runtimes.
+\begin{enumerate}
+\item $5+0.001n^3+0.025n$
+\item $500n+100n^{1.5}+50n\log_2{n}$
+\item $0.3n+5n^{1.5}+2.5n^{1.75}$
+\item $n^2\log_2{n}+n(\log_2{n)^2}$
+\item $\frac{(n(n+1))}{2} + 100n^{1.5} + 500n\log_2{n}$
+\item $0.003\log_4{n}+\log_2{\log_2{n}}$ (use the definition of the logarithm)
+\end{enumerate}
+\newpage
+\item Today we will delve deeper into strong induction. You may not 
+be asked to do this until later in the quarter yourself, but I want 
+to review strong induction more heavily as many of the proofs you will 
+see will rely on this technique! 
+\\\\
+\textbf{Strong Induction}\\
+\begin{enumerate}
+\item[Step 1:] State Claim: We will show $P(n)$ is true $\forall n$, 
+using induction on $n$.
+\item[Step 2:]  State Basis: We will show that $P(1)$,$P(2)$,$\dots$,$P(j)$ is true where $j$ is some small constant (enough 
+to see a repeatable pattern. This isn't always shown in detail but it is a good step to do yourself to get a feel.).
+\item[Step 3:]  Inductive Hypothesis: State $P(k)$.
+\item[Step 4:]  Inductive Step: Suppose $P(1)$ through $P(k)$ is true, for some integer $k$.
+We need to show that $P(k+1)$ is true. 
+\end{enumerate}
+We will work through the steps of showing, via strong induction, the claim below.\\
+\textbf{Claim: }\textit{Every amount of postage that is at least $12$ cents can be made from
+$4$-cent and $5$-cent stamps.}\\\\
+\begin{enumerate}
+      \item[Problem Exploration:] The formula for making $k$ cents of postage depends on 
+      $\rule{1cm}{0.30mm}$ cents of postage. That is to say $\rule{1cm}{0.30mm} = 4m + 5n$ where 
+      $m,n$ are natural numbers and m represents the number of $4$ cent pieces and $5$ represents the number
+      of $5$ cent pieces.
+      \item[Basis step: ]What is a good number of basis steps to show for this 
+      problem? Do a few initially and try to see if there's a pattern.
+      \item[Inductive Hypothesis: ]We need to show how to construct postage for every 
+      value from $12$ up to $k$. We need to show how to construct $k+1$ cents 
+      of postage. Using what you found in the prior step, What will we assume 
+      $k+1 \ge \rule{1cm}{0.30mm}$?
+      \item[Inductive Step: ] Introduce the inductive hypothesis back into the step for inductive hypothesis.
+\end{enumerate}
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
