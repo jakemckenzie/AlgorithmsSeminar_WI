@@ -11,10 +11,10 @@
 \usepackage{wrapfig}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \begin{document}
-\title{TCSS 343 - Week 2 - Tuesday}
+\title{TCSS 343 - Week 2 - Wednesday}
 \author{Jake McKenzie}
 \maketitle
-\noindent\centerline{\textbf{Asymptotics with an Introduction to the Anlysis Algorithms}}\\\\\\\\\\\\\\\\
+\noindent\centerline{\textbf{Asymptotics with an Introduction to the Analysis of Algorithms}}\\\\\\\\\\\\\\\\
 \begin{center}
     ``There is nothing radical about moral clarity". \\$\cdots$\\ Alexandria Ocasio-Cortez
 \end{center}
@@ -51,10 +51,16 @@ Here is an algorithm for singing a far less annoying song, $12$ Days of Christma
 Days of Christmas. Instead of analyzing the exact \st{running} singing time, let focus on the asymptotic behavior. \\
 \centerline{\includegraphics[scale = .5]{NDaysOfChristmas.JPG}}\\
 \item How many gifts are sent into this algorithm? Express this as an exact answer.
-\item Express the \st{running} singing time as a sum, then big theta running time ( 
-\textbf{HINT: }The singer mentions the name of a gift how many times?).
 \item During the first $n$ days of Christmas, my true love gate to me exactly how many gifts? Express 
 this as a sum, then solve that sum finding the the big theta space complexity of the number of gifts my true love gave to me.
+\newpage
+\item Write does and solve the recurrence for the running time of an 
+algorithm I've run into in the wild.\\
+$$T(n)=3T(\frac{n}{4})+n^2$$
+\newpage
+\item Write does and solve the recurrence for the running time of the 
+quickselect algorithm, used within quicksort.\\
+$$T(n)=T(\frac{n}{3})+T(\frac{2n}{3})+n$$
 \end{enumerate}
 \end{document}
 
