@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,mathabx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{cases}
+\usepackage{placeins}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage{wrapfig}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\begin{document}
+\title{TCSS 343 - Week 5 - Wednesday}
+\author{Jake McKenzie}
+\maketitle
+\noindent\centerline{\textbf{Dynamic Programming}}\\\\\\\\\\\\
+\begin{center}
+    ``Perhaps thinking should be measured not by what you do \\but by how you do it". \\$\cdots$\\ Richard Hamming
+\end{center}
+\begin{center}
+    ``For the last sixty five years(speaking in 2018), due to Moore's law, with a clockwork precision, computer capability has been doubling every year and a half. Without fast algorithms you cannot bring to bare Moore's Law. A dramatic increase in computer speed needs to be coupled with efficient algorithms". \\$\cdots$\\ Christos Papadimitriou
+\end{center}
+\begin{center}
+    ``Nobody expects plumbers to have a physics degree but they do have to know some things about water physics, and that can be learned in a way that doesn’t necessarily involve getting a physics degree. And that is super cool, totally valid, and not a problem. But that doesn’t mean that physics degrees are bullshit or not useful to plumbers". \\$\cdots$\\ Steve Klabnik 
+\end{center}
+\newpage
+\begin{enumerate}
+    \item[0.] Consider the Job Selection problem from lecture. Compute the optimal set of jobs and the maximum earnings for the following input.\\\\
+$$P=\{9, 8, 14, 14, 5, 10, 9, 12, 13, 14, 7, 13, 12, 5, 4, 10, 17, 8, 11, 6, 14, 6, 10, 13, 16\}$$
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\item Recover your solution to the prior part.
+\newpage
+\item Given two string $A$ and $B$ of lengths $n$ and $m$, respectively over an alphabet $\Sigma$ determine the length of the longest subsequence that 
+is common to both $A$ and $B$. A subsequence of $A = a_1,a_2,\dots,a_n$ is a string of the form $a_{i1},a_{i2},\dots,a_{ik}$ where each $i$ and $j$ is between $1$ and $n$ 
+and $1 \leq i_1 < i_2< \dots<i_k \leq n$, Below is the self-reduction so you needn't look at your notes. What is the alphabet $\Sigma$ shared among $A =$ ``xyxxzxyzxy" and $B =$ ``zxzyyzxxyxxz"?
+\[
+L(i,j) = \left\{
+\begin{tabular}{cc}
+0 & \text{if} $i = 0 \lor j = 0$ \\
+L[i-1,j-1] + 1 & \text{if} $i > 0, j > 0 \land a_i = b_j$  \\
+max\{L[i,j-1],L[i-1,j]\} & \text{if} $i > 0, j > 0 \land a_i \ne b_j$   \\
+\end{tabular}\right.
+\]
+\\\\
+\item Show the result of applying the algorithm LCS on the instance $A$ and $B$ above by drawing the grid and keeping track of the 
+length at each entry.
+\newpage
+ \item Backtrack through your solution you made on the prior page recovering the solution.\\\\\\\\\\\\\\\\
+ \item How would you modify the Algorithm LCS to require $min\{m,n\}$ space?
+\newpage
+\item Give a reduction of the coin change problem developed in class for the U.S. coin system: $\{1,5,10,25\}$.\\\\\\\\\\\\\\\\
+\item Attempt to prove this reduction correct by contradiction. Reminder that proof by contradiction is an indirect proof technique. To 
+prove a proposition $p$ assume $\neg p$. This involves deriving a contradiction $q$ such that $\neg p \implies \neg q$ which proves the proposition $p$
+we wish to show is true.
+\end{enumerate}
+\end{document}
